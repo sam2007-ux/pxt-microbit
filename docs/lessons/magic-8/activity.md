@@ -120,3 +120,36 @@ Excellent, you're ready to continue with the [challenges](/lessons/magic-8/chall
 
 ## ~
 
+
+
+#My Code
+
+```code
+
+input.onGesture(Gesture.Shake, function () {
+    basic.clearScreen()
+    randomNumber = randint(0, 8)
+    if (randomNumber == 7) {
+        basic.showString("DOUBIOUSLY")
+    } else if (randomNumber == 6) {
+        basic.showString("MAYBE NOT")
+    } else if (randomNumber == 5) {
+        basic.showString("MOST LIKELY")
+    } else if (randomNumber == 4) {
+        basic.showString("DEFINATELY")
+    } else if (randomNumber == 3) {
+        basic.showString("TRY AGAIN")
+    } else if (randomNumber == 2) {
+        basic.showString("YES")
+    } else if (randomNumber == 1) {
+        basic.showString("NO")
+    } else {
+        basic.showString("I DONT KNOW")
+    }
+    basic.showNumber(8)
+})
+let randomNumber = 0
+basic.showString("ASK A QUESTION")
+basic.showNumber(8)
+
+
